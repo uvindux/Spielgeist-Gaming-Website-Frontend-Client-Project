@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Gaming Platform - Play the best online games now!">
+    <meta name="keywords" content="online games, play games, gaming platform, free games, RPG, racing">
+    <title>Online Gaming</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/MainGamePage.css">
+    <link rel="stylesheet" href="css/SubGamePageStyling.css">
+    <link rel="stylesheet" href="css/Deals.css">
+    <script src="/js/script.js"></script>
+</head>
+
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+           <a href="index.html"><img src="images/Logo OG 1.jpg" alt="Logo" class="logo-img" /></a> 
+            Online Gaming
+        </div>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Game Hub
+                        <img src="images/dropdown.png" alt="Dropdown arrow">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="games.html">All Games </a>
+                        <a href="/GamePages/FantasyQuestGame.html">Fantasy Quest </a>
+                        <a href="/GamePages/SpeedRacer.html">Speed Racer</a>
+                        <a href="/GamePages/PuzzleMaster.html">Puzzle Master</a>
+                        <a href="/GamePages/ZombieInvasion.html">Zombie Invasion</a>
+                        <a href="/GamePages/MysteryMansion.html">Mystery Mansion</a>
+                        <a href="/GamePages/SpaceExplorer.html">Space Explorer</a>
+                        <a href="/GamePages/ChessMaster.html">Chess Master</a>
+                        <a href="/GamePages/WordWizard.html">Word Wizard</a>
+                        <a href="/GamePages/FarmFrenzy.html">Farm Frenzy </a>
+                        <a href="/GamePages/BattleArena.html">Battle Arena</a>
+                        <a href="/GamePages/MagicAcademy.html">Magic Academy</a>
+                        <a href="/GamePages/SudokuSolver.html">Sudoku Solver</a>
+                        <a href="/GamePages/TreasureHunt.html">Treasure Hunt</a>
+                        <a href="/GamePages/CardClash.html">Card Clash</a>
+                        <a href="/GamePages/CityBuilder.html">City Builder</a>
+                    </div>
+                </li>
+                <li><a href="#Events">Event Calendar</a></li>
+                <li><a href="Deals.html">Membership</a></li>
+                <li>
+                    <div class="toggle-container" id="myToggle">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <input type="text" placeholder="Search..." onkeyup="myFunction()" class="search-bar"  />
+            <a href="#ContactForm"><button class="btn">Contact </button></a>
+            <button class="btn" id="nightMode" >
+                Night 
+                <img src="images/Night mode.png" alt="Night mode icon">
+            </button>
+
+        </div>
+    </header>
+
+    <body style="background-color: white;">
+          <main class="deals-container">
+                    <div class="deals-header">
+                        <h1>Deals & Discounts</h1>
+                        <p>Discover exclusive game deals, special offers, and membership benefits</p>
+                    </div>
+            
+                    <section class="membership-banner">
+                        <div class="membership-content">
+                            <h2>Join Our Membership Program</h2>
+                            <p>Unlock exclusive discounts, early access to sales, and special rewards based on your engagement history. The more you play, the more you save!</p>
+                            
+                            <div class="membership-tiers">
+                                <div class="tier">Bronze: 5% Off</div>
+                                <div class="tier">Silver: 10% Off</div>
+                                <div class="tier">Gold: 15% Off</div>
+                                <div class="tier">Platinum: 20% Off</div>
+                            </div>
+                            
+                            <a href="#" class="join-btn">Join Now</a>
+                          
+                        </div>
+                    </section>
+            
+                    <div class="deals-tabs">
+                        <button class="tab-btn active" data-tab="all">All Deals</button>
+                        <button class="tab-btn" data-tab="new">New Releases</button>
+                        <button class="tab-btn" data-tab="bundles">Game Bundles</button>
+                        <button class="tab-btn" data-tab="events">Event Sales</button>
+                        <button class="tab-btn" data-tab="exclusive">Member Exclusives</button>
+                    </div>
+            
+                    <div class="deals-grid">
+                        <!-- Deal Card 1 -->
+                        <div class="deal-card" data-category="new exclusive">
+                            <div class="deal-image">
+                                <img src="images/Speed_Racer_Game.jpg" alt="Speed racer">
+                                <div class="discount-badge">-40%</div>
+                            </div>
+                            <div class="deal-content">
+                                <h3 class="deal-title">Speed Racer</h3>
+                                <div class="deal-price">
+                                    <span class="original-price">£4.99</span>
+                                    <span class="current-price">£2.50</span>
+                                </div>
+                                <p class="deal-description">A high-speed racing game with realistic graphics and challenging tracks.</p>
+                                <div class="deal-footer">
+                                    <span class="expiry">Ends in 3 days</span>
+                                    <button class="deal-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Deal Card 2 -->
+                        <div class="deal-card" data-category="bundles">
+                            <div class="deal-image">
+                                <img src="images/Space_Explorer_Game.jpg" alt="Space explorer">
+                                <div class="discount-badge">-65%</div>
+                            </div>
+                            <div class="deal-content">
+                                <h3 class="deal-title">Space Explorer</h3>
+                                <div class="deal-price">
+                                    <span class="original-price">£3.99</span>
+                                    <span class="current-price">£1.66</span>
+                                </div>
+                                <p class="deal-description">A sci-fi adventure game that takes players on a space journey with minds cool game</p>
+                                <div class="deal-footer">
+                                    <span class="expiry">Ends in 5 days</span>
+                                    <button class="deal-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Deal Card 3 -->
+                        <div class="deal-card" data-category="events">
+                            <div class="deal-image">
+                                <img src="images/Battle_Arena_Game.jpg" alt="Battle arena">
+                                <div class="discount-badge">-30%</div>
+                            </div>
+                            <div class="deal-content">
+                                <h3 class="deal-title">Battle Arena</h3>
+                                <div class="deal-price">
+                                    <span class="original-price">>£4.99</span>
+                                    <span class="current-price">>£4.00</span>
+                                </div>
+                                <p class="deal-description">An action-packed fighting game with various characters and moves. </p>
+                                <div class="deal-footer">
+                                    <span class="expiry">Spring Sale</span>
+                                    <button class="deal-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Deal Card 4 -->
+                        <div class="deal-card" data-category="new">
+                            <div class="deal-image">
+                                <img src="/images/Magic_Academy_Game.jpg" alt="MAgic academy">
+                                <div class="discount-badge">-25%</div>
+                            </div>
+                            <div class="deal-content">
+                                <h3 class="deal-title">Magic Academy</h3>
+                                <div class="deal-price">
+                                    <span class="original-price">£3.49</span>
+                                    <span class="current-price">£3</span>
+                                </div>
+                                <p class="deal-description">A strategy game where players learn and use spells to overcome challenges.</p>
+                                <div class="deal-footer">
+                                    <span class="expiry">Limited offer</span>
+                                    <button class="deal-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Deal Card 5 -->
+                        <div class="deal-card" data-category="exclusive">
+                            <div class="deal-image">
+                                <img src="/images/Treasure_Hunt_Game.jpg" alt="Treassure">
+                                <div class="discount-badge">-35%</div>
+                            </div>
+                            <div class="deal-content">
+                                <h3 class="deal-title">Treasure Hunt</h3>
+                                <div class="deal-price">
+                                    <span class="original-price">£1.99</span>
+                                    <span class="current-price">£1.2</span>
+                                </div>
+                                <p class="deal-description">An adventure game where players search for hidden treasures.</p>
+                                <div class="deal-footer">
+                                    <span class="expiry">Members only</span>
+                                    <button class="deal-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Deal Card 6 -->
+                        <div class="deal-card" data-category="bundles">
+                            <div class="deal-image">
+                                <img src="/images/Card_Clash_Game.jpg" alt="Clash game">
+                                <div class="discount-badge">-75%</div>
+                            </div>
+                            <div class="deal-content">
+                                <h3 class="deal-title">Card Clash </h3>
+                                <div class="deal-price">
+                                    <span class="original-price">£2.99</span>
+                                    <span class="current-price">£0.6</span>
+                                </div>
+                                <p class="deal-description">A card game with strategic gameplay and unique card abilities. </p>
+                                <div class="deal-footer">
+                                    <span class="expiry">Weekend Sale</span>
+                                    <button class="deal-btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <section class="limited-offers">
+                        <div class="limited-header">
+                            <h2>Flash Sales</h2>
+                            <div class="countdown">
+                                Ends in: <span id="countdown-timer">23:59:59</span>
+                            </div>
+                        </div>
+            
+                        <div class="deals-grid">
+                            <!-- Flash Deal 1 -->
+                            <div class="deal-card">
+                                <div class="deal-image">
+                                    <img src="images/Sudoku_Solver_Game.jpg" alt="Call of Duty: Modern Warfare III">
+                                    <div class="discount-badge">-50%</div>
+                                </div>
+                                <div class="deal-content">
+                                    <h3 class="deal-title">Sudoku Solver</h3>
+                                    <div class="deal-price">
+                                        <span class="original-price">Free</span>
+                                        <span class="current-price">Free with Headset</span>
+                                    </div>
+                                    <p class="deal-description">A traditional Sudoku game with multiple levels and hints.</p>
+                                    <div class="deal-footer">
+                                        <span class="expiry">Flash Sale</span>
+                                        <button class="deal-btn">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Flash Deal 2 -->
+                            <div class="deal-card">
+                                <div class="deal-image">
+                                    <img src="/images/City_Builder_Game.jpg" alt="City rider">
+                                    <div class="discount-badge">-60%</div>
+                                </div>
+                                <div class="deal-content">
+                                    <h3 class="deal-title">City Builder </h3>
+                                    <div class="deal-price">
+                                        <span class="original-price">£3.99</span>
+                                        <span class="current-price">£1.55</span>
+                                    </div>
+                                    <p class="deal-description">A city-building simulation game where players create and manage their city.</p>
+                                    <div class="deal-footer">
+                                        <span class="expiry">Flash Sale</span>
+                                        <button class="deal-btn">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            
+                
+                </main>
+                <!--Registration form-->
+                <div class="container">
+                    <h2>Registration Form</h2>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+                            <div class="error" id="firstNameError">First name is required</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+                            <div class="error" id="lastNameError">Last name is required</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <div class="error" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <div class="error" id="phoneError">Please enter a valid 10-digit phone number</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                            <div class="error" id="genderError">Please select a gender</div>
+                        </div>
+                        
+                        <button type="submit">Register</button>
+                        <div class="success-message" id="successMessage">Registration successful!</div>
+                    </form>
+                </div>
+            
+            
+                
+            
+                <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+                <footer class="footer">
+                    <div class="footer-container">
+                      <div class="footer-row">
+                        <div class="footer-col">
+                          <h4>Info</h4>
+                          <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="games.html">Games Hub</a></li>
+                            <li><a href="#">Reviews</a></li>
+                          </ul>
+                          <p class="external-link">BBC Gaming - <a href="https://www.bbc.co.uk/news/topics/c008ql15vdxt" target="_blank">Visit Site</a></p>
+                        </div>
+                        
+                        <div class="footer-col">
+                          <h4>Explore</h4>
+                          <ul class="links">
+                            <li><a href="#">Discounts</a></li>
+                            <li><a href="#Events">Events</a></li>
+                            <li><a href="#">News</a></li>
+                          </ul>
+                          <p class="external-link">IGN Gaming Tips - <a href="https://www.ign.com/wikis" target="_blank">Visit Site</a></p>
+                        </div>
+                        
+                        <div class="footer-col">
+                          <h4>Legal</h4>
+                          <ul class="links">
+                            <li><a href="#">Customer Agreement</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">GDPR</a></li>
+                          </ul>
+                        </div>
+                        
+                        <div class="footer-col newsletter-col">
+                          <h4>Newsletter</h4>
+                          <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
+                          <form action="#">
+                            <div class="form-group">
+                              <input type="email" placeholder="Your email" required>
+                              <button type="submit">SUBSCRIBE</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      
+                      <div class="footer-bottom">
+                        <p>&copy; 2025 Gaming Website. All rights reserved.</p>
+                       
+                      </div>
+                    </div>
+                  </footer>
+            
+    <script src="js/Deals.js"></script>
+    <script src="js/script.js"></script>
+          </body>
+</html>
+            

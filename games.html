@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Gaming Platform - Play the best online games now!">
+    <meta name="keywords" content="online games, play games, gaming platform, free games, RPG, racing">
+    <title>Online Gaming</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/MainGamePage.css">
+    <link rel="stylesheet" href="css/SubGamePageStyling.css">
+    <script src="/js/script.js"></script>
+</head>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="logo">
+       <a href="index.html"><img src="images/Logo OG 1.jpg" alt="Logo" class="logo-img" /></a> 
+        Online Gaming
+    </div>
+
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li class="dropdown">
+                <button class="dropbtn">Game Hub
+                    <img src="images/dropdown.png" alt="Dropdown arrow">
+                </button>
+                <div class="dropdown-content">
+                    <a href="games.html">All Games </a>
+                    <a href="FantasyQuestGame.html">Fantasy Quest </a>
+                    <a href="/GamePages/SpeedRacer.html">Speed Racer</a>
+                    <a href="/GamePages/PuzzleMaster.html">Puzzle Master</a>
+                    <a href="/GamePages/ZombieInvasion.html">Zombie Invasion</a>
+                    <a href="/GamePages/MysteryMansion.html">Mystery Mansion</a>
+                    <a href="/GamePages/SpaceExplorer.html">Space Explorer</a>
+                    <a href="/GamePages/ChessMaster.html">Chess Master</a>
+                    <a href="/GamePages/WordWizard.html">Word Wizard</a>
+                    <a href="/GamePages/FarmFrenzy.html">Farm Frenzy </a>
+                    <a href="/GamePages/BattleArena.html">Battle Arena</a>
+                    <a href="/GamePages/MagicAcademy.html">Magic Academy</a>
+                    <a href="/GamePages/SudokuSolver.html">Sudoku Solver</a>
+                    <a href="/GamePages/TreasureHunt.html">Treasure Hunt</a>
+                    <a href="/GamePages/CardClash.html">Card Clash</a>
+                    <a href="/GamePages/CityBuilder.html">City Builder</a>
+                </div>
+            </li>
+            <li><a href="#Events">Event Calendar</a></li>
+            <li><a href="Deals.html">Membership</a></li>
+            <li>
+                <div class="toggle-container" id="myToggle">
+                    <div class="toggle-slider"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header-right">
+        <input type="text" placeholder="Search..." onkeyup="myFunction()" class="search-bar"  />
+        <a href="#ContactForm"><button class="btn">Contact </button></a>
+        <button class="btn" id="nightMode" >
+            Night 
+            <img src="images/Night mode.png" alt="Night mode icon">
+        </button>
+
+    </div>
+</header>
+
+<body style="background-color: rgb(255, 255, 255);">
+
+    <!--Header Banner-->
+    <section class="GamepageBanner">
+
+    </section>
+    <!--Filter Games section-->
+    <section class="gamesection">
+       
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> ALL </button>
+            <button class="btn" onclick="filterSelection('racing')"> Racing </button>
+            <button class="btn" onclick="filterSelection('rgp')"> RGP</button>
+            <button class="btn" onclick="filterSelection('puzzle')"> Puzzle </button>
+            <button class="btn" onclick="filterSelection('action')"> Action</button>
+            <button class="btn" onclick="filterSelection('boad')"> Board </button>
+            <button class="btn" onclick="filterSelection('simulation')"> Simulation</button>
+            <button class="btn" onclick="filterSelection('fantasy')"> Fantasy</button>
+            <button class="btn" onclick="filterSelection('adventure')"> Adventure </button>       
+            <button class="btn" onclick="filterSelection('card')"> Card  </button>       
+            <button class="btn" onclick="filterSelection('shooter')"> Shooter</button>       
+        </div>
+
+    </section>
+  
+    <a href="#gameTable" class="btn-preview" style="background-color: red; margin-left: 180px;">Click here to view our product list</a>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+
+    <!--Games products 15-->
+    <section class="Game-product-grid" id="GamesList">
+        <div class="product-card filterDiv rgp fantasy adventure">
+            <img src="/images/Fantasy_Quest_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Fantasy Quest </h3>
+                <p>An immersive roleplaying game where players embark on epic adventures!</p>
+                <div class="product-meta">
+                    <span class="product-price">Free</span>
+                    <div class="product-actions">
+                        <a href="/GamePages/FantasyQuestGame.html" class="btn-preview">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv racing card">
+            <img src="/images/Speed_Racer_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Speed Racer </h3>
+                <p>A high-speed racing game with realistic graphics and challenging tracks.</p>
+                <div class="product-meta">
+                    <span class="product-price">£4.99</span>
+                    <div class="product-actions">
+                        <a href="/GamePages/SpeedRacer.html" class="btn-preview">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv puzzle">
+            <img src="images/Puzzle_Master_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Puzzle Master</h3>
+                <p>A brain-teasing puzzle game with varying levels of difficulty. </p>
+                <div class="product-meta">
+                    <span class="product-price"> Free</span> <br />
+                    <div class="product-actions">
+                        <a href="/GamePages/PuzzleMaster.html" class="btn-preview">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv action adventure">
+            <img src="images/Mystery_Mansion_Game.jpg" alt="Enfold" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Mystery Mansion  </h3>
+                <p>A hidden object game set in a spooky mansion filled with secrets in game world</p>
+                <div class="product-meta">
+                    <span class="product-price"> £1.99</span>
+                    <div class="product-actions">
+                        <a href="/GamePages/MysteryMansion.html" class="btn-preview">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv adventure simulation fantasy">
+            <img src="images/Space_Explorer_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Space Explorer</h3>
+                <p>A sci-fi adventure game that takes players on a space journey with minds cool game</p>
+                <div class="product-meta">
+                    <span class="product-price">£3.99</span>
+                    <div class="product-actions">
+                        <a href="images/Space_Explorer_Game.jpg" class="btn-preview">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv boad puzzle">
+            <img src="images/Chess_Master_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Chess Master</h3>
+                <p>A classic chess game with advanced AI opponents with brainstroaming!</p>
+                <div class="product-meta">
+                    <span class="product-price">Free</span>
+                    <div class="product-actions">
+                        <a href="/GamePages/ChessMaster.html" class="btn-preview">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv shooter action">
+            <img src="images/Zombie_Invasion_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Zombie Invasion</h3>
+                <p>A thrilling shooter game where players fight against waves of zombies.</p>
+                <div class="product-meta">
+                    <span class="product-price">£2.99 </span>
+                    <div class="product-actions">
+                        <a href="images/Zombie_Invasion_Game.jpg" class="btn-preview">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv puzzle">
+            <img src="/images/Word_Wizard_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Word Wizard</h3>
+                <p>A word puzzle game that challenges players' vocabulary skills. </p>
+                <div class="product-meta">
+                    <span class="product-price">Free</span>
+                    <div class="product-actions">
+                        <a href="GamePages/WordWizard.html" class="btn-preview">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv action">
+            <img src="images/Battle_Arena_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Battle Arena</h3>
+                <p>An action-packed fighting game with various characters and moves. </p>
+                <div class="product-meta">
+                    <span class="product-price">£4.99 </span>
+                    <div class="product-actions">
+                        <a href="GamePages/BattleArena.html" class="btn-preview">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv fantasy rgp strategy">
+            <img src="images/Magic_Academy_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Magic Academy</h3>
+                <p>A strategy game where players learn and use spells to overcome challenges.</p>
+                <div class="product-meta">
+                    <span class="product-price">£3.49 </span>
+                    <div class="product-actions">
+                        <a href="GamePages/MagicAcademy.html" class="btn-preview">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv puzzle">
+            <img src="images/Sudoku_Solver_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Sudoku Solver</h3>
+                <p>A traditional Sudoku game with multiple levels and hints.</p>
+                <div class="product-meta">
+                    <span class="product-price">Free</span>
+                    <div class="product-actions">
+                        <a href="GamePages/SudokuSolver.html" class="btn-preview">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv adventure">
+            <img src="images/Treasure_Hunt_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Treasure Hunt</h3>
+                <p>An adventure game where players search for hidden treasures.</p>
+                <div class="product-meta">
+                    <span class="product-price">£1.99 </span>
+                    <div class="product-actions">
+                        <a href="GamePages/TreasureHunt.html" class="btn-preview">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv card">
+            <img src="images/Card_Clash_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Card Clash </h3>
+                <p>A card game with strategic gameplay and unique card abilities. </p>
+                <div class="product-meta">
+                    <span class="product-price">£2.99</span>
+                    <div class="product-actions">
+                        <a href="GamePages/CardClash.html" class="btn-preview">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv simulation">
+            <img src="images/City_Builder_Game.jpg" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">City Builder </h3>
+                <p>A city-building simulation game where players create and manage their city. </p>
+                <div class="product-meta">
+                    <span class="product-price">£3.99</span>
+                    <div class="product-actions">
+                        <a href="GamePages/CityBuilder.html" class="btn-preview">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card filterDiv action adventure">
+            <img src="images/Mystery_Mansion_Game.jpg" alt="Enfold" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Mystery Mansion  </h3>
+                <p>A hidden object game set in a spooky mansion filled with secrets in game world</p>
+                <div class="product-meta">
+                    <span class="product-price"> £1.99</span>
+                    <div class="product-actions">
+                        <a href="/GamePages/MysteryMansion.html" class="btn-preview">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Game products details table-->
+    <div class="container" id="gameTable">
+       
+        <table class="games-table">
+          <thead>
+            <tr>
+              <th>Game Name</th>
+              <th>Game Category</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">Fantasy Quest</td>
+              <td data-label="Game Category" class="category-cell"><span class="category">Role-Playing (RPG)</span></td>
+              <td data-label="Price" class="price free">Free</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title"  style="color: black;  font-size: 20px;">Speed Racer</td>
+              <td data-label="Game Category" class="category-cell"><span class="category">Racing</span></td>
+              <td data-label="Price" class="price">£4.99</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title"  style="color: black;  font-size: 20px;">Puzzle Master</td>
+              <td data-label="Game Category" class="category-cell"><span class="category">Puzzle</span></td>
+              <td data-label="Price" class="price free">Free</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title"  style="color: black;  font-size: 20px;">Mystery Mansion</td>
+              <td data-label="Game Category" class="category-cell"><span class="category">Puzzle</span></td>
+              <td data-label="Price" class="price">£1.99</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title"  style="color: black;  font-size: 20px;">Space Explorer</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Action</span>
+                <span class="category">Shooter</span>
+                <span class="category">Arcade</span>
+                <span class="category">Sci-Fi</span>
+              </td>
+              <td data-label="Price" class="price">£3.99</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title"  style="color: black;  font-size: 20px;">Chess Master</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Board Game</span>
+                <span class="category">Strategy</span>
+              </td>
+              <td data-label="Price" class="price free">Free</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title"  style="color: black;  font-size: 20px;">Word Wizard</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Word Puzzle</span>
+                <span class="category">Educational</span>
+              </td>
+              <td data-label="Price" class="price free">Free</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">Farm Frenzy</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Simulation</span>
+                <span class="category">Strategy</span>
+              </td>
+              <td data-label="Price" class="price">£2.49</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">Battle Arena</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Fighting</span>
+                <span class="category">Action</span>
+              </td>
+              <td data-label="Price" class="price">£4.99</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">Magic Academy</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Strategy</span>
+                <span class="category">Fantasy</span>
+              </td>
+              <td data-label="Price" class="price">£3.49</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">Sudoku Solver</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Puzzle</span>
+                <span class="category">Logic</span>
+              </td>
+              <td data-label="Price" class="price free">Free</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">Treasure Hunt</td>
+              <td data-label="Game Category" class="category-cell"><span class="category">Adventure</span></td>
+              <td data-label="Price" class="price">£1.99</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">Card Clash</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Card Game</span>
+                <span class="category">Strategy</span>
+              </td>
+              <td data-label="Price" class="price">£2.99</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">City Builder</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Simulation</span>
+                <span class="category">Strategy</span>
+              </td>
+              <td data-label="Price" class="price">£3.99</td>
+            </tr>
+            <tr>
+              <td data-label="Game Name" class="game-title" style="color: black;  font-size: 20px;">Zombie Invasion</td>
+              <td data-label="Game Category" class="category-cell">
+                <span class="category">Shooter</span>
+                <span class="category">Action</span>
+              </td>
+              <td data-label="Price" class="price">£2.99</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    <!-- News Section -->
+
+    <section class="news-section">
+        <div class="section-header">
+            <h2 style="color: black;">Latest Gaming News</h2>
+            <p>Stay updated with the hottest news from the gaming world</p>
+        </div>
+        
+        <div class="illustration-container">
+          
+            <video autoplay muted loop class="video-container" style="width: 800px; margin-left: 360px; margin-bottom: 80px;" >
+                <source src="/Video/Daily_Updates_Section.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+        <div class="container">
+
+
+            <div class="news-container">
+                <!-- News 1 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="images/News 1.jpg" alt="Console News">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Hardware</span>
+                        <h3>Next-Gen Console Features Leaked Ahead of Official Announcement</h3>
+                        <p>Industry insiders reveal groundbreaking features of the upcoming console generation...</p>
+                        <div class="news-meta">
+                            <span>March 25, 2025</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 2 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="images/News 2 (1).jpg" alt="Esports News">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Esports</span>
+                        <h3>Team Phantom Secures Historic Championship Win in Dramatic Finals</h3>
+                        <p>Underdog team stuns competitors with unprecedented comeback in the final round...</p>
+                        <div class="news-meta">
+                            <span>March 22, 2025</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="/images/News 3.jpg" alt="Game Release">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">New Release</span>
+                        <h3>Highly Anticipated RPG 'Chronicles of Eternity' Finally Gets Release Date</h3>
+                        <p>After years of development, the revolutionary open-world RPG is set to launch...</p>
+                        <div class="news-meta">
+                            <span>March 19, 2025</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News 4 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="images/News 2 (1).jpg" alt="Industry News">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Industry</span>
+                        <h3>Major Gaming Studios Collaborate on Revolutionary AI-Powered Gaming Engine</h3>
+                        <p>Top developers join forces to create next-generation technology that promises to transform
+                            gaming...</p>
+                        <div class="news-meta">
+                            <span>March 17, 2025</span>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Info</h4>
+              <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games Hub</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+              <p class="external-link">BBC Gaming - <a href="https://www.bbc.co.uk/news/topics/c008ql15vdxt" target="_blank">Visit Site</a></p>
+            </div>
+            
+            <div class="footer-col">
+              <h4>Explore</h4>
+              <ul class="links">
+                <li><a href="#">Discounts</a></li>
+                <li><a href="#Events">Events</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+              <p class="external-link">IGN Gaming Tips - <a href="https://www.ign.com/wikis" target="_blank">Visit Site</a></p>
+            </div>
+            
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <ul class="links">
+                <li><a href="#">Customer Agreement</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">GDPR</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-col newsletter-col">
+              <h4>Newsletter</h4>
+              <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
+              <form action="#">
+                <div class="form-group">
+                  <input type="email" placeholder="Your email" required>
+                  <button type="submit">SUBSCRIBE</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p>&copy; 2025 Gaming Website. All rights reserved.</p>
+           
+          </div>
+        </div>
+      </footer>
+
+   
+  
+
+    <script  src="js/script.js"></script>
+    <script src="js/MainGamePageJS.js"></script>
+</body>
+
+</html>

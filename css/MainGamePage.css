@@ -1,0 +1,548 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.GamepageBanner {
+          background: url("/images/Game\ page\ banner.png");
+          height: 350px;
+         background-size: cover;    
+         width: 100%;
+        }
+
+/*Search Section*/
+#myInput {
+     
+          background-position: 10px 12px;
+          background-repeat: no-repeat;
+          width: 40%;
+          font-size: 14px;
+          margin-left: 290px;
+          padding: 12px 12px 12px 20px;
+          border: 1px solid #ddd;
+          margin-bottom: 12px;
+          margin-top: 8px;
+        }
+        #myBtnContainer{
+          margin-left: 145px;
+
+        }
+        .gamesection{
+          display: flex;
+          margin: auto;
+        }
+        .product-title{
+          color: black;
+        }
+      
+      /*Game category filter*/
+      .filterDiv {
+        display: none; 
+      }
+  
+      /* Show filtered elements */
+      .show {
+        display: block;
+      }
+  
+      /* Style for the container */
+      .Game-product-grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+  
+      /* Style for product cards */
+      .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+  
+      .product-image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+  
+      .product-details {
+        padding: 15px;
+      }
+  
+      .product-title {
+        margin-top: 0;
+      }
+  
+      .product-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+      }
+  
+      .btn-preview {
+        background-color: #033a66;
+        color: white;
+        padding: 8px 12px;
+        text-decoration: none;
+        border-radius: 4px;
+        display: inline-block;
+      }
+  
+      /* Filter button styling */
+ 
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #033a66;
+  cursor: pointer;
+  width: 80px;
+  margin-top: 8px;
+  margin-right: 5px;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+/* Hover & Active States */
+.btn:hover {
+  background-color: #020c26;
+}
+
+.btn.active {
+  background-color: #1e031c;
+  color: white;
+}
+
+/* Button Container */
+#myBtnContainer {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;        
+  justify-content: center; 
+  gap: 10px;             
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .btn {
+    width: auto;            
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;           
+    margin-right: 0;
+    text-align: center;
+  }
+
+  #myBtnContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+
+  
+/*News section */
+     .news-section {
+      padding: 4rem 0;
+      background-color: #f5f5f5;
+    }
+
+    
+    .news-container {
+      display: flex;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .news-card {
+      background-color: rgb(255, 255, 255);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(249, 249, 249, 0.2);
+      transition: transform 0.3s ease;
+    }
+    
+    .news-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .news-image {
+      height: 180px;
+      overflow: hidden;
+    }
+    
+    .news-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .news-card:hover .news-image img {
+      transform: scale(1.1);
+    }
+    
+    .news-content {
+      padding: 1.5rem;
+    }
+    
+    .news-category {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      background-color: rgb(6, 6, 88);
+      color: rgb(215, 206, 206);
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+    
+    .news-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      line-height: 1.4;
+      color: black;
+    }
+    
+    .news-content p {
+      color: var(--text-gray);
+      margin-bottom: 1rem;
+    }
+    
+    .news-meta {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-gray);
+      font-size: 0.9rem;
+    }
+    
+    .read-more {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .read-more:hover {
+      color: var(--secondary-color);
+    }
+    
+    /*Responsive*/
+    @media (max-width: 768px) {
+      .section-header h2 {
+        font-size: 2rem;
+      }
+      
+      .events-container, .news-container {
+        grid-template-columns: 1fr;
+      }
+    } 
+    
+
+/*Game table */
+
+
+.games-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+ 
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.games-table thead {
+  background-color: #4b6584;
+  color: white;
+}
+
+.games-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.games-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.games-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.games-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.category-cell {
+  max-width: 40%;
+}
+
+.category {
+  background-color: #778ca3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  display: inline-block;
+  margin: 2px;
+}
+
+.price {
+  font-weight: 600;
+  color: #2d98da;
+  white-space: nowrap;
+}
+
+.free {
+  color: #20bf6b;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .games-table thead {
+    display: none;
+  }
+  
+  .games-table, .games-table tbody, .games-table tr, .games-table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .games-table tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4b6584;
+  }
+  
+  .games-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .games-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 600;
+    text-align: left;
+    color: #555;
+  }
+  
+  .category-cell {
+    max-width: 100%;
+  }
+}
+/* Root Variables */
+:root {
+  --text-gray: #666;
+  --primary-color: #0056b3;
+  --secondary-color: #003f7d;
+}
+
+/* Map Image */
+.MapImage img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: auto;
+  display: block;
+  background: linear-gradient(45deg, #f3f3f3, #e0e0e0);
+  border: 1px solid #04192f;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* Section Container */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-description {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* News Section */
+.news-section {
+  padding: 4rem 1rem;
+  background-color: #f5f5f5;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+}
+
+/* Video Container */
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* News Grid */
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* News Card */
+.news-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image */
+.news-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-image img {
+  transform: scale(1.1);
+}
+
+/* Content */
+.news-content {
+  padding: 1.5rem;
+}
+
+.news-category {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: rgb(6, 6, 88);
+  color: rgb(215, 206, 206);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.news-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+  color: black;
+}
+
+.news-content p {
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+}
+
+/* Read More Link */
+.read-more {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  .news-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .news-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .news-content p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+      

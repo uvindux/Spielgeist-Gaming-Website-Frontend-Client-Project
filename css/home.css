@@ -737,16 +737,17 @@
 
 /* Form Styles */
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  width: 400px;
 }
 
 .form-section {
-  width: 100%;
+  width: 400px;
 }
 
 .form-group {
@@ -947,16 +948,21 @@ textarea {
 /* Events Grid */
 .events-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 15rem;
+  width: 400px;
+  margin-left: -100px;
+ 
 }
 
 .event-card {
   background-color: rgb(57, 75, 110);
+  width: 320px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: -200px;
 }
 
 .event-card:hover {

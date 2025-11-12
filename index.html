@@ -1,82 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Online Gaming Platform - Play the best online games now!">
-    <meta name="keywords" content="online games, play games, gaming platform, free games, RPG, racing">
-    <title>Online Gaming</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/MainGamePage.css">
-    <link rel="stylesheet" href="css/SubGamePageStyling.css">
-  
-</head>
+<div id="Navbar">
 
 
-<body>
-
-    <!-- Header & Navigation -->
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/Logo OG 1.jpg" alt="Logo" class="logo-img" /></a>
-            Online gaming
-        </div>
-        
-        <div class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li class="dropdown">
-                    <button class="dropbtn" aria-expanded="false" aria-haspopup="true">
-                        Game Hub
-                        <img src="images/dropdown.png" alt="Dropdown arrow">
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="games.html">All Games </a>
-                        <a href="/GamePages/FantasyQuestGame.html">Fantasy Quest </a>
-                        <a href="/GamePages/SpeedRacer.html">Speed Racer</a>
-                        <a href="/GamePages/PuzzleMaster.html">Puzzle Master</a>
-                        <a href="/GamePages/ZombieInvasion.html">Zombie Invasion</a>
-                        <a href="/GamePages/MysteryMansion.html">Mystery Mansion</a>
-                        <a href="/GamePages/SpaceExplorer.html">Space Explorer</a>
-                        <a href="/GamePages/ChessMaster.html">Chess Master</a>
-                        <a href="/GamePages/WordWizard.html">Word Wizard</a>
-                        <a href="/GamePages/FarmFrenzy.html">Farm Frenzy </a>
-                        <a href="/GamePages/BattleArena.html">Battle Arena</a>
-                        <a href="/GamePages/MagicAcademy.html">Magic Academy</a>
-                        <a href="/GamePages/SudokuSolver.html">Sudoku Solver</a>
-                        <a href="/GamePages/TreasureHunt.html">Treasure Hunt</a>
-                        <a href="/GamePages/CardClash.html">Card Clash</a>
-                        <a href="/GamePages/CityBuilder.html">City Builder</a>
-                    </div>
-                </li>
-                <li><a href="#Events">Event Calendar</a></li>
-                <li><a href="Deals.html">Membership</a></li>
-                <li>
-                    <div class="toggle-container" id="myToggle">
-                        <div class="toggle-slider"></div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        
-        <div class="header-right">
-            <input type="text" placeholder="Search..." onkeyup="myFunction()" class="search-bar" />
-            <a href="#ContactForm"><button class="btn">Contact Us </button></a>
-            <button class="btn" id="nightMode">
-                Night
-                <img src="images/Night mode.png" alt="Night mode icon">
-            </button>
-        </div>
-    </header>
-
+</div>
 
 
 <body style="background-color: white;">
@@ -105,19 +30,20 @@
 
     </div>
 
-   
+
     <!--Popular games and prices-->
 
 
     <section class="GameProducts">
-        
+
         <div class="section-header">
             <h2 id="Events">Trending Game Picks</h2>
             <p>Stay ahead in the gaming world with our top-rated
                 and most-played titles! Whether you're into action, adventure, strategy, or multiplayer battles, this
-                collection features the latest hits and all-time favorites. Dive into immersive gameplay, stunning graphics,
+                collection features the latest hits and all-time favorites. Dive into immersive gameplay, stunning
+                graphics,
                 and thrilling challenges that keep players coming back for more. Find your next gaming obsession here!
-    </p>
+            </p>
         </div>
 
         <div class="Game-product-grid" id="GamesList">
@@ -227,24 +153,26 @@
         </div>
 
     </section>
-    <a href="games.html" style="text-decoration: none"> <button class="seeMore" style="background-color: rgb(255, 255, 255);" 
-        onmouseover="this.style.backgroundColor='#4fc3f7';" 
-        onmouseout="this.style.backgroundColor='gray';">Explore more </button></a>
+    <a href="games.html" style="text-decoration: none"> <button class="seeMore"
+            style="background-color: rgb(255, 255, 255);" onmouseover="this.style.backgroundColor='#4fc3f7';"
+            onmouseout="this.style.backgroundColor='gray';">Explore more </button></a>
 
 
 
 
-    
+
 
     </div>
     <!--Contact section -->
     <div class="section-container">
         <!-- Contact section -->
-       
+
         <div class="section-header">
             <p style="font-size: 28px; color: black;">Contact Us</p>
             <h2 id="Events">Love to hear from you, Get in touch</h2>
-            <p>Got a question or need assistance? We're here to help! Whether you're looking for the latest games or need support, reach out anytime. Fast, friendly, and reliable—your ultimate gaming experience starts here!</p>
+            <p>Got a question or need assistance? We're here to help! Whether you're looking for the latest games or
+                need support, reach out anytime. Fast, friendly, and reliable—your ultimate gaming experience starts
+                here!</p>
         </div>
         <div class="container">
             <div class="form-section" id="ContactForm">
@@ -254,13 +182,13 @@
                         <input type="text" id="name" name="name" placeholder="Enter your name">
                         <div id="nameError" class="error-message">Name is required. Please enter your full name.</div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email">Your email</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email">
                         <div id="emailError" class="error-message">Please enter a valid email address.</div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="interest">What you are interested in</label>
                         <select id="interest" name="interest">
@@ -282,158 +210,167 @@
                             <option value="city-builder">City Builder</option>
                         </select>
                     </div>
-                    
-                  
-                    
+
+
+
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea>
-                        <div id="messageError" class="error-message">Message is required. Please describe your project.</div>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us about your project"></textarea>
+                        <div id="messageError" class="error-message">Message is required. Please describe your project.
+                        </div>
                     </div>
-                    
+
                     <button type="submit" class="submit-btn">Just Send ↗</button>
                 </form>
             </div>
         </div>
     </div>
-   <!--Events section-->
-<section class="events-section">
-    <div class="section-header">
-        <h2 id="Events">Upcoming Events</h2>
-        <p>Join us at the hottest gaming events of the year</p>
-    </div>
-    <div class="container">
-        <div class="illustration-container">
-            <video autoplay muted loop class="video-container">
-                <source src="/Video/Daily_Updates_Section.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <!--Events section-->
+    <section class="events-section">
+        <div class="section-header">
+            <h2 id="Events">Upcoming Events</h2>
+            <p>Join us at the hottest gaming events of the year</p>
         </div>
-
-        <div class="events-container">
-            <!-- Event 1 -->
-            <div class="event-card">
-                <div class="event-image">
-                    <img src="images/Game event 1.jpg" alt="Championship Tournament">
-                    <div class="event-date">APR 15</div>
-                </div>
-                <div class="event-content">
-                    <h3>Esports Championship Tournament</h3>
-                    <p>The ultimate gaming showdown featuring top teams competing for a $100,000 prize pool.</p>
-                    <div class="event-meta">
-                        <div class="event-location">
-                            <svg width="16" height="16" viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                            </svg>
-                            Los Angeles Convention Center
-                        </div>
-                    </div>
-                    <a href="#" class="event-button">Register Now</a>
-                </div>
+        <div class="container">
+            <div class="illustration-container">
+                <video autoplay muted loop class="video-container">
+                    <source src="/Video/Daily_Updates_Section.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
-            <!-- Event 2 -->
-            <div class="event-card">
-                <div class="event-image">
-                    <img src="images/event 2.jpg" alt="Gaming Expo">
-                    <div class="event-date">MAY 20</div>
-                </div>
-                <div class="event-content">
-                    <h3>Next-Gen Gaming Expo</h3>
-                    <p>Experience the future of gaming with exclusive previews of upcoming AAA titles and hardware.</p>
-                    <div class="event-meta">
-                        <div class="event-location">
-                            <svg width="16" height="16" viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                            </svg>
-                            Tokyo Game Center
-                        </div>
+            <div class="events-container">
+                <!-- Event 1 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/Game event 1.jpg" alt="Championship Tournament">
+                        <div class="event-date">APR 15</div>
                     </div>
-                    <a href="#" class="event-button">Get Tickets</a>
+                    <div class="event-content">
+                        <h3>Esports Championship Tournament</h3>
+                        <p>The ultimate gaming showdown featuring top teams competing for a $100,000 prize pool.</p>
+                        <div class="event-meta">
+                            <div class="event-location">
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                Los Angeles Convention Center
+                            </div>
+                        </div>
+                        <a href="#" class="event-button">Register Now</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Event 3 -->
-            <div class="event-card">
-                <div class="event-image">
-                    <img src="images/Zombie_Invasion_Game.jpg" alt="Developer Conference">
-                    <div class="event-date">JUN 8</div>
-                </div>
-                <div class="event-content">
-                    <h3>Game Developers Conference</h3>
-                    <p>Connect with industry professionals and learn from the best in game development.</p>
-                    <div class="event-meta">
-                        <div class="event-location">
-                            <svg width="16" height="16" viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                            </svg>
-                            San Francisco Tech Hub
-                        </div>
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/event 2.jpg" alt="Gaming Expo">
+                        <div class="event-date">MAY 20</div>
                     </div>
-                    <a href="#" class="event-button">Learn More</a>
+                    <div class="event-content">
+                        <h3>Next-Gen Gaming Expo</h3>
+                        <p>Experience the future of gaming with exclusive previews of upcoming AAA titles and hardware.
+                        </p>
+                        <div class="event-meta">
+                            <div class="event-location">
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                Tokyo Game Center
+                            </div>
+                        </div>
+                        <a href="#" class="event-button">Get Tickets</a>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/Zombie_Invasion_Game.jpg" alt="Developer Conference">
+                        <div class="event-date">JUN 8</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Game Developers Conference</h3>
+                        <p>Connect with industry professionals and learn from the best in game development.</p>
+                        <div class="event-meta">
+                            <div class="event-location">
+                                <svg width="16" height="16" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                San Francisco Tech Hub
+                            </div>
+                        </div>
+                        <a href="#" class="event-button">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
     <footer class="footer">
         <div class="footer-container">
-          <div class="footer-row">
-            <div class="footer-col">
-              <h4>Info</h4>
-              <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games Hub</a></li>
-                <li><a href="#">Reviews</a></li>
-              </ul>
-              <p class="external-link">BBC Gaming - <a href="https://www.bbc.co.uk/news/topics/c008ql15vdxt" target="_blank">Visit Site</a></p>
-            </div>
-            
-            <div class="footer-col">
-              <h4>Explore</h4>
-              <ul class="links">
-                <li><a href="#">Discounts</a></li>
-                <li><a href="#Events">Events</a></li>
-                <li><a href="#">News</a></li>
-              </ul>
-              <p class="external-link">IGN Gaming Tips - <a href="https://www.ign.com/wikis" target="_blank">Visit Site</a></p>
-            </div>
-            
-            <div class="footer-col">
-              <h4>Legal</h4>
-              <ul class="links">
-                <li><a href="#">Customer Agreement</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">GDPR</a></li>
-              </ul>
-            </div>
-            
-            <div class="footer-col newsletter-col">
-              <h4>Newsletter</h4>
-              <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
-              <form action="#">
-                <div class="form-group">
-                  <input type="email" placeholder="Your email" required>
-                  <button type="submit">SUBSCRIBE</button>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Info</h4>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="games.html">Games Hub</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                    <p class="external-link">BBC Gaming - <a href="https://www.bbc.co.uk/news/topics/c008ql15vdxt"
+                            target="_blank">Visit Site</a></p>
                 </div>
-              </form>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="links">
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#Events">Events</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                    <p class="external-link">IGN Gaming Tips - <a href="https://www.ign.com/wikis" target="_blank">Visit
+                            Site</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="links">
+                        <li><a href="#">Customer Agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive
+                        offers.</p>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
-          
-          <div class="footer-bottom">
-            <p>&copy; 2025 Online Gaming Website. All rights reserved.</p>
-           
-          </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Online Gaming Website. All rights reserved.</p>
+
+            </div>
         </div>
-      </footer>
-     
+    </footer>
 
 
-    <script src="js/script.js"></script>
-    
+
+    <script src="js/script.js" ></script>
+
 </body>
 
 </html>
